@@ -1,0 +1,73 @@
+.weather-app {
+    font-family: 'Lato', sans-serif;
+    border: none;
+    border-radius: 25px;
+
+}
+
+ul {
+    list-style: none;
+
+    padding: 0px;
+}
+
+.current {
+    text-align: left;
+
+}
+
+h3 {
+    text-align: center;
+    border-color: black;
+}
+
+.forecast {
+    text-align: center;
+    font-size: larger;
+}
+
+.body {
+    text-align: left;
+}
+
+.weather {
+    position: relative;
+    top: -80px;
+    left: 500px;
+}
+
+form {
+    text-align: center;
+}
+
+#celsius-link {
+    text-decoration: none;
+}
+
+#fahrenheit-link {
+    text-decoration: none;
+}
+
+.text-muted {
+    font-size: xx-small;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.location {
+    display: block;
+    margin: auto;
+
+    color: black;
+    background-color: white;
+}
+
+.location:hover {
+    cursor: pointer;
+}
+
+#temp {
+    font-size: xx-large;
+}
