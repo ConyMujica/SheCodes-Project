@@ -29,28 +29,36 @@
                 <input type="submit" value="Search" />
             </form>
             <br>
-            <button class="location" id="current-location">
-                Search my location </button>
-            <br>
+            <button type="button" class="btn btn-light" id="current-location">Current location</button>
 
             <br>
 
-            <div class="card text-center">
-                <div class="card-header">
-                    Current city
+            <br>
+
+
+            <div class="row">
+                <div class="col-sm">
+                    <ul>
+                        <h1 class="city-name">
+                            <li class="text-city" id="city">Villa Alemana</li>
+                        </h1>
+                        <li class="text-day" id="dayTime">Wednesday 16:00</li>
+                        <li class="text-humidity" id="humidity">Humidity: <span class="humidityPorcentage" id="hum
+                                        "></span> 60%</li>
+                        <li class="text-wind" id="windPerHour">Wind: <span class="windHour" id="wind"></span> 30kms/h
+                        </li>
+                    </ul>
                 </div>
-                <div class="card-body body">
-                    <p class="card-text" id="city">Villa Alemana</p>
-                    <p class="card-text" id="dayTime">Wednesday 16:00</p>
-
-                    <p class="card-text" id="temp">19ºC
-
-                    <h6>(<span><a href="#" id="celsius-link">Cº </a></span>|<span> <a href="#"
-                                id="fahrenheit-link">Fº</a></span>)</p>
-
-                    </h6>
+                <div class="col-sm">
+                    <ul>
+                        <li class="text-temp" id="temp">19ºC | Fº</li>
+                    </ul>
                 </div>
             </div>
+
+
+
+
 
 
 
@@ -122,11 +130,13 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <p>
-                <a href="https://github.com/ConyMujica/SheCodes-Project" target="_blank">Open-source code</a>
-                by Constanza Mujica Gonzalez
-            </p>
+
+            <footer>
+                <small>
+                    <a href="https://github.com/ConyMujica/SheCodes-Project" target="_blank">Open-source code</a>
+                    by Constanza Mujica Gonzalez
+                </small>
+            </footer>
         </div>
         <script src="script.js"></script>
 </body>

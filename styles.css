@@ -1,14 +1,24 @@
 .weather-app {
+    max-width: 600px;
+    margin: 30px auto;
     font-family: 'Lato', sans-serif;
-    border: none;
+    padding: 20px;
     border-radius: 25px;
 
 }
 
-ul {
-    list-style: none;
+.city-name {
+    font-size: 24;
+    font-weight: 100;
+}
 
-    padding: 0px;
+h1 {
+    font-style: none;
+}
+
+ul {
+    list-style-type: none;
+
 }
 
 .current {
@@ -21,10 +31,7 @@ h3 {
     border-color: black;
 }
 
-.forecast {
-    text-align: center;
-    font-size: larger;
-}
+
 
 .body {
     text-align: left;
@@ -52,11 +59,7 @@ form {
     font-size: xx-small;
 }
 
-.card-body {
-    text-align: center;
-}
-
-.location {
+.btn-light {
     display: block;
     margin: auto;
 
@@ -70,4 +73,12 @@ form {
 
 #temp {
     font-size: xx-large;
+}
+
+.col-sm {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
