@@ -4,21 +4,10 @@
     font-family: 'Lato', sans-serif;
     padding: 20px;
     border-radius: 25px;
-
-}
-
-.city-name {
-    font-size: 24;
-    font-weight: 100;
-}
-
-h1 {
-    font-style: none;
 }
 
 ul {
-    list-style-type: none;
-
+    list-style: none;
 }
 
 .current {
@@ -30,8 +19,6 @@ h3 {
     text-align: center;
     border-color: black;
 }
-
-
 
 .body {
     text-align: left;
@@ -71,14 +58,22 @@ form {
     cursor: pointer;
 }
 
-#temp {
-    font-size: xx-large;
-}
-
 .col-sm {
     text-align: center;
 }
 
 footer {
     text-align: center;
+}
+
+.five {
+    text-align: center;
+}
+
+.overview {
+    text-align: center;
+}
+
+li::first-letter {
+    text-transform: capitalize;
 }
