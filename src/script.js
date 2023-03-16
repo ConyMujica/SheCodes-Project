@@ -35,13 +35,17 @@ function newSearch(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/04d@2x.png`
+  );
 }
 
 function search(city) {
   let apiKey = "c4ea742bb9bd639a1346b4ed50c2d997";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(newSearch);
-  console.log(apiUrl);
 }
 
 function handleSubmit(event) {
