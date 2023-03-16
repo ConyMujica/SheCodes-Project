@@ -50,6 +50,7 @@ function search(city) {
 }
 
 function handleSubmit(event) {
+  event.preventDefault();
   let city = document.querySelector("#city-input").value;
   search(city);
 }
@@ -63,6 +64,7 @@ function searchLocation(position) {
 }
 
 function searchCurrentCity(event) {
+  event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
