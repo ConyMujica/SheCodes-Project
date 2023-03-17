@@ -68,6 +68,26 @@ function searchCurrentCity(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function convertFahrenheitTemperature(event) {
+  event.preventDefault();
+  let convertCelsius = parseFloat(document.querySelector("#temp").innerHTML);
+  let convertFahrenheit = convertCelsius * (9 / 5) + 32;
+  let roundFarenheit = Math.round(convertFahrenheit);
+  document.querySelector("#temp").innerHTML = `${roundFarenheit}`;
+}
+
+function convertCelsiusTemperature(event) {
+  event.preventDefault();
+  document.querySelector("#temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
+}
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertCelsiusTemperature);
+
 let searchform = document.querySelector("form");
 searchform.addEventListener("submit", handleSubmit);
 
