@@ -4,6 +4,8 @@
     font-family: 'Lato', sans-serif;
     padding: 20px;
     border-radius: 25px;
+    border-style: dashed;
+
 }
 
 ul {
@@ -12,7 +14,6 @@ ul {
 
 .current {
     text-align: left;
-
 }
 
 h3 {
@@ -72,4 +73,18 @@ form {
 
 li::first-letter {
     text-transform: capitalize;
+}
+
+.forecast {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+}
+
+.card {
+    border-style: none;
 }
