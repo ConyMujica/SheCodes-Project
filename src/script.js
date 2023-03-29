@@ -24,6 +24,30 @@ let day = days[now.getDay()];
 
 p.innerHTML = `${day} ${hour}:${minutes} `;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                    <div class="col-2">
+                        <div class="weather-forecast-date">${day}</div>
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" width="36" />
+                        <br>
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max">18º</span>
+                            <span class="weather-forecast-temperature-min">12º</span>
+                        </div>
+            </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div<`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function newSearch(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -97,3 +121,4 @@ let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", searchCurrentCity);
 
 search("London");
+displayForecast();
