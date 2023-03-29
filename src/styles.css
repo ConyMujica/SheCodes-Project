@@ -75,16 +75,28 @@ li::first-letter {
     text-transform: capitalize;
 }
 
-.forecast {
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-
 .footer {
     text-align: center;
 }
 
 .card {
     border-style: none;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+
+}
+
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
 }
