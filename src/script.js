@@ -48,6 +48,10 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function newSearch(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -122,3 +126,4 @@ currentLocationButton.addEventListener("click", searchCurrentCity);
 
 search("London");
 displayForecast();
+getForecast(response.data.coord);
