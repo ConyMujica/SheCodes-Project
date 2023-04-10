@@ -1,38 +1,50 @@
 .weather-app {
-    max-width: 600px;
+    max-width: 700px;
     margin: 30px auto;
     font-family: 'Lato', sans-serif;
     padding: 20px;
     border-radius: 25px;
-    border-style: dashed;
+    background: radial-gradient(rgb(252, 208, 115) 0%, rgb(139, 102, 241) 100%);
+}
 
+#overview {
+    text-align: center;
+}
+
+#city-input {
+    border: none;
+    border-radius: 10px;
+}
+
+#search {
+    border: none;
+    color: black;
+    background: none;
+}
+
+#search:hover {
+    background-color: rgb(231, 189, 141);
+    border-radius: 5px;
 }
 
 ul {
     list-style: none;
 }
 
-.current {
-    text-align: left;
-}
-
-h3 {
-    text-align: center;
-    border-color: black;
-}
-
-.body {
-    text-align: left;
-}
-
-.weather {
-    position: relative;
-    top: -80px;
-    left: 500px;
-}
-
 form {
     text-align: center;
+}
+
+#temp {
+    font-size: 20px;
+}
+
+#humidity {
+    font-size: 20px;
+}
+
+#wind {
+    font-size: 20px;
 }
 
 #celsius-link {
@@ -43,24 +55,21 @@ form {
     text-decoration: none;
 }
 
-.text-muted {
-    font-size: xx-small;
-}
-
 .btn-light {
     display: block;
     margin: auto;
-
     color: black;
-    background-color: white;
+    background: none;
+    border: none;
 }
 
-.location:hover {
-    cursor: pointer;
+.btn-light:hover {
+    background-color: rgb(231, 189, 141);
 }
 
 .col-sm {
     text-align: center;
+
 }
 
 .five {
@@ -75,29 +84,30 @@ li::first-letter {
     text-transform: capitalize;
 }
 
-.card {
-    border-style: none;
-}
-
 .weather-forecast {
     margin-top: 20px;
     text-align: center;
-
 }
 
 .weather-forecast-date {
-    font-size: 16px;
+    font-weight: bolder;
 }
 
 .weather-forecast-temperatures {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .weather-forecast-temperature-min {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
-footer {
+p {
     text-align: center;
     font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+
+.city-details {
+    text-align: center;
+    margin-right: 30px;
 }

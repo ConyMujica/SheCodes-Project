@@ -27,8 +27,8 @@
             <br>
 
             <form>
-                <input type="text" placeholder="Search city" autocomplete="off" id="city-input" />
-                <input type="submit" value="Search" />
+                <input type="text" placeholder=" Search city" autocomplete="off" id="city-input" />
+                <input type="submit" value="Search" id="search" />
             </form>
             <br>
             <button type="button" class="btn btn-light" id="current-location">Current location</button>
@@ -48,16 +48,16 @@
                 <div class="row">
                     <div class="col-sm">
                         <img src="src/images/undraw_weather_app_re_kcb1.svg" alt="Clear" width="50px" id="icon" />
+
                         <strong id="temp"></strong>
+
                         <span class="units">
                             <a href="#" id="celsius-link">ºC</a> |
                             <a href="#" id="fahrenheit-link">ºF</a></span>
                     </div>
                     <div class="col-sm">
                         <ul>
-                            <li>
-                                Precipitation: 12%
-                            </li>
+
                             <li>
                                 Humidity: <span id="humidity"></span>%
                             </li>
@@ -72,7 +72,7 @@
             <div class="weather-forecast" id="forecast">
                 <div class="row">
                     <div class="col-2">
-                        <div class="weather-forecast-date">Thu</div>
+                        <div class="weather-forecast-date"> <strong>Thu</strong></div>
                         <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" width="36" />
                         <br>
                         <div class="weather-forecast-temperatures">
@@ -83,12 +83,10 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <small>
-                <a href="https://github.com/ConyMujica/SheCodes-Project" target="_blank">Open-source code</a>
-                by Constanza Mujica Gonzalez
-            </small>
-        </footer>
+        <p>
+            <a href="https://github.com/ConyMujica/SheCodes-Project" target="_blank">Open-source code</a>
+            by Constanza Mujica Gonzalez
+        </p>
         <script src="src/script.js"></script>
 </body>
 
