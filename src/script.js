@@ -22,7 +22,7 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-p.innerHTML = `${day} ${hour}:${minutes} `;
+p.innerHTML = `${day} ${hour}:${minutes}`;
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -34,7 +34,6 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
